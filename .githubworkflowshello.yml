@@ -1,0 +1,12 @@
+name: Hello Pipeline
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Teste simples
+        run: echo "Pipeline funcionando"
